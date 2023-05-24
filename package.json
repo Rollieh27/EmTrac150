@@ -1,0 +1,23 @@
+{
+  "name": "emtrac150",
+  "version": "1.0.0",
+  "description": "Employee Tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rollieh27/EmTrac150.git"
+  },
+  "author": "Rollie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rollieh27/EmTrac150/issues"
+  },
+  "homepage": "https://github.com/Rollieh27/EmTrac150#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.2.0"
+  }
+}
