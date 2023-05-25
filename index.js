@@ -22,13 +22,13 @@ const db = mysql.createConnection(
     // MySQL username,
     user: "root",
     // MySQL password
-    password: "",
+    password: "bia2811",
     database: "emtrac_db",
   },
   console.log(`Connected to the EmTrac150 database.`)
 );
 
-// db.query("SELECT * FROM department;", (err, data) => console.table(data));
+db.query("SELECT * FROM department;", (err, data) => console.table(data));
 
 function promptMenu() {
   inquirer.prompt(menuQuestion).then((answer) => {
@@ -48,7 +48,6 @@ function promptMenu() {
       addEmployee();
     }
     if (answer.todo === "add Role") {
-      //   addRole();
       addRole();
     }
     if (answer.todo === "update Employee") {
